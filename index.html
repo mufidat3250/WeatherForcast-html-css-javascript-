@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <title>Weather Forcast App</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <div class="sidebar">
+        <div>
+          <form action="" class="search" id="search">
+            <input type="text" id="query" placeholder="Search..." />
+            <button>
+              <i class="fas fa-search"></i>
+            </button>
+          </form>
+          <div class="weather-icon">
+            <img src="./icons/sun//27.png " alt="" id="icon" class="icon" />
+          </div>
+          <div class="temperature">
+            <h1 id="temp">0</h1>
+            <span class="temp-unit">°C</span>
+          </div>
+          <div>
+            <p id="date-time">Monday, 12:00</p>
+          </div>
+          <div class="divider"></div>
+
+          <div class="condition-rain">
+            <div class="condition">
+              <i class="fas fa-cloud"></i>
+              <div class="condition" id="condition">Condition</div>
+            </div>
+            <div class="rain">
+              <i class="fas fa-tint"></i>
+              <p id="rain">Perc -0%</p>
+            </div>
+          </div>
+        </div>
+        <div class="location">
+          <div class="location-icon">
+            <i class="fas fa-map-marker-alt"></i>
+          </div>
+          <div class="location-text">
+            <p class="location">Location</p>
+          </div>
+        </div>
+      </div>
+      <div class="main">
+        <nav>
+          <ul class="options">
+            <button class="hourly">TOday</button>
+            <button class="week active">Week</button>
+          </ul>
+          <ul class="options units">
+            <button class="celcius active">*C</button>
+            <button class="fahrenheit">*F</button>
+          </ul>
+        </nav>
+        <div class="cards" id="weather-cards">
+          <div class="card">
+            <h2 class="day-name">Monday</h2>
+          <div class="card-icon">
+            <img src="/icons/moon/15.png" alt="" />
+          </div>
+          <div class="day-temp">
+            <h2 class="temp">32</h2>
+            <span class="temp-init">*C</span>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./main.js"></script>
+  </body>
+</html>
