@@ -162,8 +162,13 @@ nav .units button{
      background-color: black;
      color: white;
 }
+#weather-cards{
+    margin-top: 40px;
+}
 .cards{
     display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 .cards .card{
     display: flex;
@@ -191,3 +196,36 @@ nav .units button{
     font-size: 12px;
     align-items: center  ;
 }
+.highlights{
+    /* margin-top: 30px; */
+}
+.highlights .heading{
+    text-transform: capitalize;
+    padding: 40px 0;
+
+}
+.highlights .card2{
+    width: 250px;
+    height: 150px;
+    border-radius: 20px;
+    color: #1a1a1a;
+    background-color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction:column;
+}
+.card2 .card-heading{
+    color: #c2c2c2;
+}
+.card2 .content{
+    margin-top: 20px;
+}
+.card2 .content p:first-child{
+    font-size: 30px;
+    text-align: center;
+}
+.card2 .content p:last-child{
+    font-size: 12px;
+    margin-top: 20px;
+}
+
